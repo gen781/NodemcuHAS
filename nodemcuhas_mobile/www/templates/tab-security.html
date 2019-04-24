@@ -1,0 +1,47 @@
+<ion-view view-title="Security">
+  <ion-content>
+    <div class="item item-divider">
+        Sensor Pendeteksi Pencuri
+    </div>
+    <ion-toggle  ng-change="updateSensor1()" ng-model="sensor1.checked" ng-checked="sensor1.checked">
+        Status : {{sensor1.status}}
+    </ion-toggle>
+    <ion-item>
+        Keterangan : {{sensor1.keterangan}}
+    </ion-item>
+    
+    <div class="item item-divider">
+        Sensor Parkir Mobil
+    </div>
+    <ion-toggle  ng-change="updateSensor2()" ng-model="sensor2.checked" ng-checked="sensor2.checked">
+        Status : {{sensor2.status}}
+    </ion-toggle>
+    <ion-item>
+        Keterangan : {{sensor2.keterangan}}
+    </ion-item>
+
+    <div class="item item-divider">
+        Sensor Pendeteksi Gas Bocor
+    </div>
+    <ion-toggle  ng-change="updateSensor3()" ng-model="sensor3.checked" ng-checked="sensor3.checked">
+        Status : {{sensor3.status}}
+    </ion-toggle>
+    <ion-item>
+        Keterangan : {{sensor3.keterangan}}
+    </ion-item>
+
+    <div class="item item-divider">
+        Sensor Pendeteksi Kebakaran
+    </div>
+    <ion-toggle  ng-change="updateSensor4()" ng-model="sensor4.checked" ng-checked="sensor4.checked">
+        Status : {{sensor4.status}}
+    </ion-toggle>
+    <ion-item>
+        Keterangan : {{sensor4.keterangan}}
+    </ion-item>
+    <div class="item button-bar">
+        <a class="button button-balanced icon icon-left ion-ios-checkmark" ng-click="activeAll()">Active All</a>
+        <a class="button button-assertive icon icon-left ion-ios-checkmark-outline" ng-click="inactiveAll()">Inactive All</a>
+    </div> 
+  </ion-content>
+</ion-view>

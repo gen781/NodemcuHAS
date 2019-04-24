@@ -1,0 +1,26 @@
+<ion-view view-title="Lighting">
+  <ion-content>
+    <ion-toggle  ng-change="updateLamp1()" ng-model="lamp1.checked" ng-checked="lamp1.checked">
+        Lampu Halaman
+    </ion-toggle>
+    <ion-toggle  ng-change="updateLamp2()" ng-model="lamp2.checked" ng-checked="lamp2.checked">
+        Lampu Ruang Tamu
+    </ion-toggle>
+    <ion-toggle  ng-change="updateLamp3()" ng-model="lamp3.checked" ng-checked="lamp3.checked">
+        Lampu Kamar Tidur
+    </ion-toggle>
+    <ion-toggle  ng-change="updateLamp4()" ng-model="lamp4.checked" ng-checked="lamp4.checked">
+        Lampu Dapur
+    </ion-toggle>
+    <ion-toggle  ng-change="updateLamp5()" ng-model="lamp5.checked" ng-checked="lamp5.checked">
+        Lampu Kamar Mandi
+    </ion-toggle>
+    <ion-toggle  ng-change="updateLamp6()" ng-model="lamp6.checked" ng-checked="lamp6.checked">
+        Lampu Ruang Makan
+    </ion-toggle>
+    <div class="item button-bar">
+        <a class="button button-balanced icon icon-left ion-ios-lightbulb" ng-click="onAll()">On All</a>
+        <a class="button button-assertive icon icon-left ion-ios-lightbulb-outline" ng-click="offAll()">Off All</a>
+    </div> 
+  </ion-content>
+</ion-view>
